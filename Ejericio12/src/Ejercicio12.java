@@ -18,11 +18,11 @@ public class Ejercicio12 extends Poblacion implements Poblacion_Final {
 	public static void main(String[] args)
 	{
 		Ejercicio12[] poblacion = new Ejercicio12[5];
-		poblacion[0] = new Ejercicio12("Barcelona", 100000);
-		poblacion[1] = new Ejercicio12("Madrid", 1000000);
-		poblacion[2] = new Ejercicio12("Malaga", 50000);
-		poblacion[3] = new Ejercicio12("Sevilla", 80000);
-		poblacion[4] = new Ejercicio12("Murcia",40000);
+		poblacion[0] = new Ejercicio12("'Barcelona'", 100000);
+		poblacion[1] = new Ejercicio12("'Madrid'", 1000000);
+		poblacion[2] = new Ejercicio12("'Malaga'", 50000);
+		poblacion[3] = new Ejercicio12("'Sevilla'", 80000);
+		poblacion[4] = new Ejercicio12("'Murcia'",40000);
 		
 		String iniciocontenidoJenkinsFile = "pipeline {\n" +
 											"    agent any\n" +

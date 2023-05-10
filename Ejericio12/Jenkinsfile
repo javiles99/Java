@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage(Barcelona) {
+        stage('Barcelona') {
             steps {
                 script {
 				    echo 'La poblacion parcial de la ciudad es: '100000
@@ -9,7 +9,7 @@ pipeline {
                 }
             }
         }
-        stage(Madrid) {
+        stage('Madrid') {
             steps {
                 script {
 				    echo 'La poblacion parcial de la ciudad es: '1000000
@@ -17,7 +17,7 @@ pipeline {
                 }
             }
         }
-        stage(Malaga) {
+        stage('Malaga') {
             steps {
                 script {
 				    echo 'La poblacion parcial de la ciudad es: '50000
@@ -25,7 +25,7 @@ pipeline {
                 }
             }
         }
-        stage(Sevilla) {
+        stage('Sevilla') {
             steps {
                 script {
 				    echo 'La poblacion parcial de la ciudad es: '80000
@@ -33,7 +33,7 @@ pipeline {
                 }
             }
         }
-        stage(Murcia) {
+        stage('Murcia') {
             steps {
                 script {
 				    echo 'La poblacion parcial de la ciudad es: '40000
