@@ -1,0 +1,35 @@
+pipeline {
+    agent any
+    stages {
+        stage(Barcelona) {
+            steps {
+                script {
+                    echo 'La poblacion final es: '80000.0                }
+            }
+        }
+        stage(Madrid) {
+            steps {
+                script {
+                    echo 'La poblacion final es: '800000.0                }
+            }
+        }
+        stage(Malaga) {
+            steps {
+                script {
+                    echo 'La poblacion final es: '40000.0                }
+            }
+        }
+        stage(Sevilla) {
+            steps {
+                script {
+                    echo 'La poblacion final es: '64000.0                }
+            }
+        }
+        stage(Murcia) {
+            steps {
+                script {
+                    echo 'La poblacion final es: '32000.0                }
+            }
+        }
+    }
+}
