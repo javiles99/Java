@@ -4,31 +4,41 @@ pipeline {
         stage(Barcelona) {
             steps {
                 script {
-                    echo 'La poblacion final es: '80000.0                }
+				    echo 'La poblacion parcial de la ciudad es: '100000
+                    echo 'Por lo tanto la poblacion final es: '80000.0
+                }
             }
         }
         stage(Madrid) {
             steps {
                 script {
-                    echo 'La poblacion final es: '800000.0                }
+				    echo 'La poblacion parcial de la ciudad es: '1000000
+                    echo 'Por lo tanto la poblacion final es: '800000.0
+                }
             }
         }
         stage(Malaga) {
             steps {
                 script {
-                    echo 'La poblacion final es: '40000.0                }
+				    echo 'La poblacion parcial de la ciudad es: '50000
+                    echo 'Por lo tanto la poblacion final es: '40000.0
+                }
             }
         }
         stage(Sevilla) {
             steps {
                 script {
-                    echo 'La poblacion final es: '64000.0                }
+				    echo 'La poblacion parcial de la ciudad es: '80000
+                    echo 'Por lo tanto la poblacion final es: '64000.0
+                }
             }
         }
         stage(Murcia) {
             steps {
                 script {
-                    echo 'La poblacion final es: '32000.0                }
+				    echo 'La poblacion parcial de la ciudad es: '40000
+                    echo 'Por lo tanto la poblacion final es: '32000.0
+                }
             }
         }
     }

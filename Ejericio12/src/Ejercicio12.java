@@ -36,8 +36,9 @@ public class Ejercicio12 extends Poblacion implements Poblacion_Final {
 		contenidoJenkinsFile +="        stage("+poblacion[i].Ciudad+") {\n" +
                         "            steps {\n" +
                         "                script {\n" +
-                        "                    echo 'La poblacion final es: '" + poblacion[i].calcularPoblacion(i)+
-                        "                }\n" +
+                        "				    echo 'La poblacion parcial de la ciudad es: '" + poblacion[i].PoblacionCiudad+
+                        "\n                    echo 'Por lo tanto la poblacion final es: '" + poblacion[i].calcularPoblacion(i)+
+                        "\n                }\n" +
                         "            }\n" +
                         "        }\n";
                        	i++;				  	
