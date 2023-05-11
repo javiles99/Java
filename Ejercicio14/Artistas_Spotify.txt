@@ -1,0 +1,40 @@
+
+Artista numero 0
+	El nombre del artista es: Rosalia
+	El genero del artista es: Pop
+	La cantidad de reproducciones que ha conseguido el artista ha sido de: 1000.0 Millones
+	El pais donde ha sido mas escuchado el artista es: España
+	La recaudacion monetaria es de 20.0 Millones de euros
+	La proyeccion final es de 12000.0 Millones de euros
+
+Artista numero 1
+	El nombre del artista es: KarolG
+	El genero del artista es: Reggaeton
+	La cantidad de reproducciones que ha conseguido el artista ha sido de: 5000.0 Millones
+	El pais donde ha sido mas escuchado el artista es: Republica_Dominicana
+	La recaudacion monetaria es de 100.0 Millones de euros
+	La proyeccion final es de 60000.0 Millones de euros
+
+Artista numero 2
+	El nombre del artista es: Morat
+	El genero del artista es: Pop
+	La cantidad de reproducciones que ha conseguido el artista ha sido de: 500.0 Millones
+	El pais donde ha sido mas escuchado el artista es: Colombia
+	La recaudacion monetaria es de 10.0 Millones de euros
+	La proyeccion final es de 6000.0 Millones de euros
+
+Artista numero 3
+	El nombre del artista es: Pablo_Lopez
+	El genero del artista es: Pop
+	La cantidad de reproducciones que ha conseguido el artista ha sido de: 200.0 Millones
+	El pais donde ha sido mas escuchado el artista es: España
+	La recaudacion monetaria es de 4.0 Millones de euros
+	La proyeccion final es de 2400.0 Millones de euros
+
+Artista numero 4
+	El nombre del artista es: ACDC
+	El genero del artista es: Rock
+	La cantidad de reproducciones que ha conseguido el artista ha sido de: 10000.0 Millones
+	El pais donde ha sido mas escuchado el artista es: Australia
+	La recaudacion monetaria es de 200.0 Millones de euros
+	La proyeccion final es de 120000.0 Millones de euros
