@@ -1,0 +1,3 @@
+El nombre del pokemon es: mew
+El peso del pokemon es: 40
+El pokemon es de tipo: psychic

@@ -2,6 +2,9 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Scanner;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 
 import org.json.JSONObject;
 
@@ -12,9 +15,11 @@ public class Pokemon
 	{
 		try 
 		{
-		URL url = new URL("https://pokeapi.co/api/v2/pokemon/dialga");
+			
+		
+		URL url = new URL("https://pokeapi.co/api/v2/pokemon/mew");
 		HttpURLConnection con = (HttpURLConnection) url.openConnection();
-		con.connect(); //Establece la conexion.
+		con.connect();
 		int tiempoDeRespuesta = con.getResponseCode();
 		if (tiempoDeRespuesta != 200)
 		{
@@ -29,12 +34,26 @@ public class Pokemon
 				informacion.append(sc.nextLine());
 			}
 			sc.close();
-			System.out.println(informacion);
+			
 			JSONObject data = new JSONObject(informacion.toString());
-						
-			System.out.println("El peso del pokemon es: " + data.get("weight"));
-			System.out.println("El nombre del pokemon es: " + data.get("forms"));
-			System.out.println("El pokemon es de tipo: " + data.get("types"));
+			String type = data.getJSONArray("types").getJSONObject(0).getJSONObject("type").get("name").toString();
+		
+			String ruta = "C:\\Users\\javiles\\eclipse-workspace\\Ejercicio13\\";
+			String nombreArchivo = "Pokemon.txt";
+			String nombre = ruta+nombreArchivo;
+			
+			File archivo = new File(nombre); 
+		
+			if (! archivo.exists()) 
+			{
+				archivo.createNewFile();
+				
+			}
+			
+			FileWriter fw = new FileWriter(archivo,true);
+			BufferedWriter bw = new BufferedWriter(fw);
+			bw.write("El nombre del pokemon es: " + data.remove("name")+"\nEl peso del pokemon es: " + data.get("weight")+ "\nEl pokemon es de tipo: " + type);
+			bw.close();
 		}
 		}
 	
