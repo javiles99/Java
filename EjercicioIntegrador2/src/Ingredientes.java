@@ -96,7 +96,7 @@ public class Ingredientes{
 		contenidoJenkinsFile ="        stage("+arroz+") {\n" +
 				"            steps {\n" +
 				"                script {\n" +
-				"				    echo 'El tiempo de coccion de la paella son '" + tiempococcion+" minutos"+
+				"				    echo 'El tiempo de coccion de la paella son " + tiempococcion+" minutos'"+
 				"\n                    echo 'Las calorias de la receta son: '" +calorias+ " calorias"+
 				"\n                }\n" +
 				"            }\n" +
@@ -104,8 +104,8 @@ public class Ingredientes{
 				"        stage("+tort+") {\n" +
 				"            steps {\n" +
 				"                script {\n" +
-				"				    echo 'El tiempo de coccion de la torilla son '" + tiempococcion1+" minutos"+
-				"\n                    echo 'Las calorias de la receta son '" + calorias1+ "calorias"+
+				"				    echo 'El tiempo de coccion de la torilla son " + tiempococcion1+" minutos'"+
+				"\n                    echo 'Las calorias de la receta son " + calorias1+ "calorias'"+
 				"\n                }\n" +
 				"            }\n" +
 				"        }\n";
