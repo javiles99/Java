@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    stages {
+        stage('Nombre de la receta: Paella') {
+            steps {
+                script {
+				    echo 'El tiempo de coccion de la paella son 17 minutos'
+                    echo 'Las calorias de la receta son: 51 calorias'
+                }
+            }
+        }
+        stage('Nombre de la receta: Tortilla de patata') {
+            steps {
+                script {
+				    echo 'El tiempo de coccion de la torilla son 5 minutos'
+                    echo 'Las calorias de la receta son 15 calorias'
+                }
+            }
+        }
+    }
+}
