@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8"> 
+<title>Sobre Nosotros</title> 
+<style> 
+body
+{
+	background-color: #ECECEC;
+}
+.container 
+{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.alert
+{
+padding: 10px;
+background-color: #FFCC00;
+color: #333333;
+font-weight: bold;
+border-radius: 5px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>SOBRE NOSOTROS</h1>
+<ul>
+
+	<li><a href= "#" onclick= Nosotros()>Sobre Nosotros</a></li>
+	</ul>
+<div id="informacion" style="display: none;">
+	<p>La empresa fue creada en el 1990 por una unidad familiar</p>
+	<p>Hacemos la comida típica murciana y te explicamos las recetas si las quieres saber</p>
+	<img src = "https://tarifaturismo.files.wordpress.com/2016/10/manoli-comidas-caseras-para-llevar-en-tarifa.jpg">
+</div>
+</div>
+<script>
+
+function Nosotros()
+{
+	var content = document.getElementById("informacion")
+	if (content.style.display == "none")
+		{
+			content.style.display = "block";	
+		}
+	else
+		{
+			content.style.display = "none";
+		}	
+}
+</script>
+</body>
+</html>

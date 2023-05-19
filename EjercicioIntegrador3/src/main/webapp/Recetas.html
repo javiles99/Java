@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Recetas Manoli</title>
+<style> 
+body
+{
+	background-color: #ECECEC;
+}
+.container 
+{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.alert
+{
+padding: 10px;
+background-color: #FFCC00;
+color: #333333;
+font-weight: bold;
+border-radius: 5px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Bienvenido a la lista de recetas</h1>
+<p>ELIGE LA RECETA QUE DESEAS</p>
+<ul>
+	<li><a href= "#" onclick= receta1()>Receta de la Ensalada Murciana</a></li>
+	<li><a href = "#" onclick= receta2()>Receta del Zarangollo</a></li>
+</ul>
+
+
+<div id="receta1" style="display: none;">
+	<p>RECETA DE LA ENSALADA MURCIANA</p>
+	<ul>
+	<li>INGREDIENTES</li>
+	
+	<ol>
+	<li>1 Bote de tomates en conserva</li>
+	<li>1 Lata de aceitunas</li>
+	<li>2 Huevos duros</li>
+	<li>1 Cebolleta</li>
+	<li>Aceitunas negras</li>
+	<li>Atún en conserva</li>
+	<li>Aceite de oliva virgen extra</li>
+	</ol>
+	<li>PREPARACION</li>
+	<ol>
+	<li>Cocer los huevos duros</li>
+	<li>Pelar y cortar la cebolleta</li>
+	<li>Abrir el tomate y el atún en conserva</li>
+	<li>Colocarlo todo en un plato y mezclarlo</li>
+	<li>Por último añadir aceite de oliva y una pizca de sal</li>
+	</ol>
+	</ul>
+	<img src = "https://okdiario.com/img/2017/07/03/receta-de-ensalada-murciana-1-620x349.jpg">
+	</div>
+	
+	<div id="receta2" style="display: none;">
+	<p>RECETA DEL ZARANGOLLO</p>
+	<ul>
+	<li>INGREDIENTES</li>
+	
+	<ol>
+	<li>1 kg de calabacín</li>
+	<li>3 Huevos</li>
+	<li>1 Patata</li>
+	<li>1 Cebolla</li>
+	<li>Aceite de oliva virgen extra</li>
+	<li>Pimienta molida al gusto</li>
+	<li>Sal al gusto</li>
+	</ol>
+	<li>PREPARACION</li>
+	<ol>
+	<li>Lavar y pelar y cortar en rodajas finas la cebolla, la patata y el calabacín</li>
+	<li>Poner sartén con aceite y freir la cebolla, la patata y el calabacín</li>
+	<li>Dejamos cocer poco a poco hasta que esté todo bien hecho y pochado</li>
+	<li>Cuando esté, sazonamos con sal y pimienta e incorporamos los huevos</li>
+	<li>Integramos a modo de revuelto, hasta que esté el huevo cocinado pero sin llegar a secarlo</li>
+	</ol>
+	</ul>
+	<img src = "https://meencantamurcia.es/wp-content/uploads/2016/09/zarangollo-como-se-hace.jpg">
+	
+
+</div>
+</div>
+<script>
+function receta1()
+{
+	var content = document.getElementById("receta1")
+	if (content.style.display == "none")
+		{
+			content.style.display = "block";	
+		}
+	else
+		{
+			content.style.display = "none";
+		}	
+}
+
+function receta2()
+{
+	var content = document.getElementById("receta2")
+	if (content.style.display == "none")
+		{
+			content.style.display = "block";	
+		}
+	else
+		{
+			content.style.display = "none";
+		}	
+}
+</script>
+</body>
+</html>

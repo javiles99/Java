@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Contacto Manoli</title> 
+<style> 
+body
+{
+	background-color: #ECECEC;
+}
+.container 
+{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.alert
+{
+padding: 10px;
+background-color: #FFCC00;
+color: #333333;
+font-weight: bold;
+border-radius: 5px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>CONTACTO</h1>
+<ul>
+	<li><a href= "#" onclick= Contacto()>Contacto</a></li>
+	</ul>
+<div id="contacto" style="display: none;">
+	<p>Si quieres contactarnos o reservar puedes llamar al 676356789 o al 968305928</p>
+	<img src = "https://media.istockphoto.com/id/531014557/es/foto/tel%C3%A9fono-retro.jpg?s=612x612&w=0&k=20&c=s4IIPnlBf7Zb3aS-HRCQc0cxSfdXRiIIh_gL2WD-2Rw=">
+</div>
+
+</div>
+<script>
+function Contacto()
+{
+	var content = document.getElementById("contacto")
+	if (content.style.display == "none")
+		{
+			content.style.display = "block";	
+		}
+	else
+		{
+			content.style.display = "none";
+		}	
+}
+</script>
+</body>
+</html>
